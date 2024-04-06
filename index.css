@@ -2,19 +2,24 @@
     margin: 0;
     padding: 0;
 }
-header,.menu{
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+}
+.head,.menu,.hero{
     display: flex;
     justify-content: space-evenly;
 }
-header{
+.head{
     align-items: center;
     text-transform: uppercase;
     padding: 1%;
 }
 .logo{
     display: flex;
-    font-family: 'Squada One';
-    font-size: 10px;
+    font-family: 'Squada One' !important;
+    font-size: 18px;
+    margin-right: 50%;
 }
 .logo img{
     padding-right: 5%;
@@ -22,7 +27,60 @@ header{
 .menu a{
     text-decoration: none;
     color: #333;
-    font-family: 'Montserrat';
-    font-size: 8px;
+    font-size: 12px;
     margin-left: 6%;
+    font-weight: 900;
+}
+.hero{
+    flex-direction: column;
+    align-items: start;
+    padding: 12%;
+}
+.hero h2{
+    font-size: 48px;
+    font-weight: 950;
+    width: 400px;
+    text-transform: uppercase;
+}
+.hero p{
+    font-size: 16px;
+    width: 33%;
+}
+.hero button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    margin: 2% 0 ;
+    border-radius: 2px;
+    background-color: #E05124;
+    box-shadow: 2px 6px 8px #e05024cf;
+    color: aliceblue;
+    border-style: none;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 5% 0 0 14%;
+    padding: 2%;
+    width: 70%;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 5px 15px 40px #929292b1;
+}
+.avocado{
+    margin-left: 66%;
+    margin-top:-12%;
+    filter: drop-shadow(15px 15px 30px rgba(0, 0, 0, 0.421));
+}
+.info h3{
+    font-size: 32px;
+    font-weight: 950;
+    padding: 1%;
+}
+.info p{
+    font-size: 16px;
+    padding: 1%;
 }
