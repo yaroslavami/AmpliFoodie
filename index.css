@@ -1,65 +1,79 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     overflow-x: hidden;
     font-family: 'Montserrat';
 }
-.head,.menu,.hero{
+
+.head,
+.menu,
+.hero {
     display: flex;
     justify-content: space-evenly;
 }
-.head{
+
+.head {
     align-items: center;
     text-transform: uppercase;
     padding: 1%;
 }
-.logo{
+
+.logo {
     display: flex;
     font-family: 'Squada One' !important;
     font-size: 18px;
     margin-right: 50%;
 }
-.logo img{
+
+.logo img {
     padding-right: 5%;
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
     color: #333;
     font-size: 12px;
     margin-left: 7%;
     font-weight: 900;
 }
-.hero{
+
+.hero {
     flex-direction: column;
     align-items: start;
     padding: 12%;
 }
-.hero h2{
+
+.hero h2 {
     font-size: 48px;
     font-weight: 950;
     width: 400px;
     text-transform: uppercase;
 }
-.hero p{
+
+.hero p {
     font-size: 16px;
     width: 33%;
 }
-.hero button{
+
+.hero button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
     height: 30px;
-    margin: 2% 0 ;
+    margin: 2% 0;
     border-radius: 2px;
     background-color: #E05124;
     box-shadow: 2px 6px 8px #e05024cf;
     color: aliceblue;
     border-style: none;
 }
-.info, .subscription{
+
+.info,
+.subscription {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -67,43 +81,51 @@ body{
     padding: 2%;
     width: 70%;
 }
-.info{
+
+.info {
     height: 150px;
     border-radius: 15px;
     box-shadow: 5px 15px 40px #929292b1;
 }
-.avocado{
+
+.avocado {
     margin-left: 66%;
-    margin-top:-12%;
+    margin-top: -12%;
     filter: drop-shadow(15px 15px 30px rgba(0, 0, 0, 0.421));
 }
-.info h3{
+
+.info h3 {
     font-size: 32px;
     font-weight: 950;
     padding: 1%;
 }
-.info p{
+
+.info p {
     font-size: 16px;
     padding: 1%;
 }
-.desc h4{
+
+.desc h4 {
     font-size: 24px;
     font-weight: bolder;
     padding: 1%;
 }
-.desc p{
+
+.desc p {
     width: 600px;
     font-size: 15px;
     padding: 1%;
 }
-.plans{
+
+.plans {
     display: flex;
     flex-direction: row;
     align-items: start;
     padding: 2%;
     flex-basis: 30%;
 }
-.plans div{
+
+.plans div {
     display: flex;
     flex-direction: column;
     height: 560px;
@@ -111,22 +133,26 @@ body{
     border-radius: 15px;
     box-shadow: 5px 15px 40px #929292b1;
 }
-.year{
+
+.year {
     background: rgb(34, 232, 113);
     background: linear-gradient(131deg, rgba(34, 232, 113, 1) 0%, rgba(101, 131, 36, 1) 75%, rgba(165, 107, 38, 1) 100%);
     color: white;
 }
-.plans h3{
+
+.plans h3 {
     font-size: 32px;
     font-weight: bolder;
     padding: 9%;
     text-align: center;
 }
-.plans p{
+
+.plans p {
     font-size: 14px;
     padding: 5%;
 }
-.subscription img{
+
+.subscription img {
     align-self: flex-end;
     width: 8%;
     height: auto;
@@ -134,22 +160,27 @@ body{
     margin-top: -11%;
     filter: drop-shadow(2px 6px 8px #84bf06e8)
 }
-.num{
+
+.num {
     text-align: center;
     font-size: 40px !important;
     font-weight: bolder;
     color: #E05124;
     filter: drop-shadow(2px 4px 6px #e05024b6);
 }
-.green{
+
+.green {
     color: #32870A;
 }
-.red{
-    color:#E05124;
+
+.red {
+    color: #E05124;
 }
-.darker{
+
+.darker {
     background-color: rgba(0, 0, 0, 0.089);
 }
-.year .darker{
+
+.year .darker {
     background-color: rgba(255, 255, 255, 0.089);
 }
