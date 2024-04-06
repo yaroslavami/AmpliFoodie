@@ -28,7 +28,7 @@ body{
     text-decoration: none;
     color: #333;
     font-size: 12px;
-    margin-left: 6%;
+    margin-left: 7%;
     font-weight: 900;
 }
 .hero{
@@ -59,13 +59,15 @@ body{
     color: aliceblue;
     border-style: none;
 }
-.info{
+.info, .subscription{
     display: flex;
     flex-direction: column;
     align-items: start;
     margin: 5% 0 0 14%;
     padding: 2%;
     width: 70%;
+}
+.info{
     height: 150px;
     border-radius: 15px;
     box-shadow: 5px 15px 40px #929292b1;
@@ -83,4 +85,71 @@ body{
 .info p{
     font-size: 16px;
     padding: 1%;
+}
+.desc h4{
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 1%;
+}
+.desc p{
+    width: 600px;
+    font-size: 15px;
+    padding: 1%;
+}
+.plans{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 2%;
+    flex-basis: 30%;
+}
+.plans div{
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    margin: 2%;
+    border-radius: 15px;
+    box-shadow: 5px 15px 40px #929292b1;
+}
+.year{
+    background: rgb(34, 232, 113);
+    background: linear-gradient(131deg, rgba(34, 232, 113, 1) 0%, rgba(101, 131, 36, 1) 75%, rgba(165, 107, 38, 1) 100%);
+    color: white;
+}
+.plans h3{
+    font-size: 32px;
+    font-weight: bolder;
+    padding: 9%;
+    text-align: center;
+}
+.plans p{
+    font-size: 14px;
+    padding: 5%;
+}
+.subscription img{
+    align-self: flex-end;
+    width: 8%;
+    height: auto;
+    padding: 1%;
+    margin-top: -11%;
+    filter: drop-shadow(2px 6px 8px #84bf06e8)
+}
+.num{
+    text-align: center;
+    font-size: 40px !important;
+    font-weight: bolder;
+    color: #E05124;
+    filter: drop-shadow(2px 4px 6px #e05024b6);
+}
+.green{
+    color: #32870A;
+}
+.red{
+    color:#E05124;
+}
+.darker{
+    background-color: rgba(0, 0, 0, 0.089);
+}
+.year .darker{
+    background-color: rgba(255, 255, 255, 0.089);
 }
