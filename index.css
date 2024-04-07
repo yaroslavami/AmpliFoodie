@@ -4,7 +4,9 @@
 }
 body {
     overflow-x: hidden;
-    font-family: 'Montserrat';
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 .head,
 .menu,
@@ -19,9 +21,10 @@ body {
 }
 .logo {
     display: flex;
-    font-family: 'Squada One' !important;
+    font-family: 'Squada One', sans-serif;
     font-size: 18px;
     margin-right: 50%;
+    color: rgba(0, 0, 0, 0.723);
 }
 .logo img {
     padding-right: 5%;
@@ -31,7 +34,7 @@ body {
     color: #333;
     font-size: 12px;
     margin-left: 7%;
-    font-weight: 900;
+    font-weight: 500;
 }
 .hero {
     flex-direction: column;
@@ -40,7 +43,7 @@ body {
 }
 .hero h2 {
     font-size: 48px;
-    font-weight: 950;
+    font-weight: 900;
     width: 400px;
     text-transform: uppercase;
 }
@@ -82,7 +85,7 @@ body {
 }
 .info h3 {
     font-size: 32px;
-    font-weight: 950;
+    font-weight: 900;
     padding: 1%;
 }
 .info p {
@@ -91,7 +94,7 @@ body {
 }
 .desc h4 {
     font-size: 24px;
-    font-weight: bolder;
+    font-weight: 800;
     padding: 1%;
 }
 .desc p {
@@ -122,8 +125,9 @@ body {
     color: white;
 }
 .plans h3 {
+    text-transform: uppercase;
     font-size: 32px;
-    font-weight: bolder;
+    font-weight: 900;
     padding: 9%;
     text-align: center;
 }
@@ -142,7 +146,7 @@ body {
 .num {
     text-align: center;
     font-size: 40px !important;
-    font-weight: bolder;
+    font-weight: 700;
     color: #E05124;
     filter: drop-shadow(2px 4px 6px #e05024b6);
 }
@@ -177,8 +181,9 @@ body {
     margin: 2%;
 }
 .diet h3{
+    text-transform: uppercase;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 900;
     padding: 5%;
 }
 ul{
