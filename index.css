@@ -2,23 +2,27 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 .head,
 .menu,
-.hero{
+.hero {
     display: flex;
     justify-content: space-evenly;
 }
+
 .head {
     align-items: center;
     text-transform: uppercase;
     padding: 1%;
 }
+
 .logo {
     display: flex;
     font-family: 'Squada One', sans-serif;
@@ -26,9 +30,11 @@ body {
     margin-right: 50%;
     color: rgba(0, 0, 0, 0.723);
 }
-[alt="Logo"]{
+
+[alt="Logo"] {
     padding-right: 5%;
 }
+
 .menu a {
     text-decoration: none;
     color: #333;
@@ -36,21 +42,25 @@ body {
     margin-left: 7%;
     font-weight: 600;
 }
+
 .hero {
     flex-direction: column;
     align-items: start;
     padding: 12%;
 }
+
 .hero h2 {
     font-size: 48px;
     font-weight: 900;
     width: 450px;
     text-transform: uppercase;
 }
+
 .hero p {
     font-size: 16px;
     width: 33%;
 }
+
 .hero button {
     display: flex;
     justify-content: center;
@@ -64,6 +74,7 @@ body {
     color: aliceblue;
     border-style: none;
 }
+
 .info,
 .subscription {
     display: flex;
@@ -73,35 +84,42 @@ body {
     padding: 2%;
     width: 70%;
 }
+
 .info {
     height: 150px;
     border-radius: 15px;
     box-shadow: 5px 15px 40px #9292926b;
 }
+
 .avocado {
     margin-left: 66%;
     margin-top: -12%;
     filter: drop-shadow(15px 15px 30px rgba(0, 0, 0, 0.29));
 }
+
 .info h3 {
     font-size: 32px;
     font-weight: 900;
     padding: 1%;
 }
+
 .info p {
     font-size: 16px;
     padding: 1%;
 }
+
 .desc h4 {
     font-size: 24px;
     font-weight: 800;
     padding: 1%;
 }
+
 .desc p {
     width: 600px;
     font-size: 15px;
     padding: 1%;
 }
+
 .plans {
     display: flex;
     flex-direction: row;
@@ -109,21 +127,28 @@ body {
     padding: 2%;
     flex-basis: 30%;
 }
-.plans div, .diet{
+
+.plans div,
+.diet {
     display: flex;
     flex-direction: column;
     margin: 2%;
     border-radius: 15px;
     box-shadow: 5px 15px 40px #000000a2;
 }
-.plans div{
+
+.plans div {
     height: 560px;
 }
-.year, .diet, footer{
+
+.year,
+.diet,
+footer {
     background: rgb(34, 232, 113);
     background: linear-gradient(131deg, rgba(34, 232, 113, 1) 0%, rgba(101, 131, 36, 1) 75%, rgba(165, 107, 38, 1) 100%);
     color: white;
 }
+
 .plans h3 {
     text-transform: uppercase;
     font-size: 32px;
@@ -131,10 +156,12 @@ body {
     padding: 9%;
     text-align: center;
 }
+
 .plans p {
     font-size: 14px;
     padding: 5%;
 }
+
 .subscription img {
     align-self: flex-end;
     width: 8%;
@@ -143,6 +170,7 @@ body {
     margin-top: -11%;
     filter: drop-shadow(2px 6px 8px #84bf06e8)
 }
+
 .num {
     text-align: center;
     font-size: 40px !important;
@@ -150,98 +178,189 @@ body {
     color: #E05124;
     filter: drop-shadow(2px 4px 6px #e05024b6);
 }
+
 .green {
     color: #32870A;
 }
+
 .red {
     color: #E05124;
 }
+
 .darker {
     background-color: rgba(0, 0, 0, 0.064);
 }
+
 .year .darker {
     background-color: rgba(255, 255, 255, 0.089);
 }
-.diets{
+
+.diets {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     padding: 10% 13% 5% 13%;
 }
-.types{
+
+.types {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding-top: 5%;
 }
-.diet{
+
+.diet {
     width: 512px;
     height: 196px;
     margin: 2%;
 }
-.diet h3{
+
+.diet h3 {
     text-transform: uppercase;
     font-size: 22px;
     font-weight: 900;
     padding: 5%;
 }
-ul{
+
+ul {
     padding: 2% 0 3% 5%;
 }
-li{
+
+li {
     list-style-type: none;
 }
-.diet img{
+
+.diet img {
     padding: 5%;
 }
-[alt="pineapple"]{
+
+[alt="pineapple"] {
     width: 53%;
     margin-top: -50.7%;
     margin-left: 56%;
 }
+
 [alt="cheese"] {
     width: 70%;
     margin-top: -53%;
     margin-left: 43%;
 }
+
 [alt="salad"] {
     width: 53%;
     margin-top: -43.3%;
     margin-left: 59%;
 }
+
 [alt="tomato"] {
     width: 60%;
     margin-top: -26.4%;
     margin-left: 50%;
 }
-.users{
+
+.users {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 10%;
+    margin: 10%;
     min-width: 1000px;
     max-height: 650px;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 5px 10px 30px #00000044;
 }
-.table{
+
+.users h2 {
+    font-size: 20px;
+}
+
+.table {
     display: flex;
     align-items: center;
     flex-direction: row;
 }
-.icon{
+
+.table h3 {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.user .ava,
+.user .beth,
+.user .davis,
+.user .james,
+.user .rachel {
+    display: flex;
+    flex-direction: row;
+}
+
+.ava,
+.beth,
+.davis,
+.james,
+.rachel {
+    padding: 5%;
+    width: 300px;
+}
+
+.user,
+.login-time {
+    margin: 3%;
+}
+
+.department .ava,
+.department .beth,
+.department .davis,
+.department .james,
+.department .rachel,
+.status .ava,
+.status .beth,
+.status .davis,
+.status .james,
+.status .rachel {
+    padding: 8%;
+}
+
+.icon {
     border-radius: 50%;
     border: black solid 2px;
-    margin:1%;
+    margin: 1%;
     width: 30px;
     height: 30px;
 }
-.foot{
+
+.name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.email,
+.ago {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.date,
+.department,
+.status {
+    font-size: 14px;
+}
+
+.foot {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 20px;
     padding: 2%;
 }
-.copyright{
+
+.copyright {
     max-height: 10px;
+}
+
+.status {
+    color: #32870A;
+    font-weight: 600;
 }
