@@ -10,7 +10,7 @@ body {
 }
 .head,
 .menu,
-.hero {
+.hero{
     display: flex;
     justify-content: space-evenly;
 }
@@ -26,7 +26,7 @@ body {
     margin-right: 50%;
     color: rgba(0, 0, 0, 0.723);
 }
-.logo img {
+[alt="Logo"]{
     padding-right: 5%;
 }
 .menu a {
@@ -34,7 +34,7 @@ body {
     color: #333;
     font-size: 12px;
     margin-left: 7%;
-    font-weight: 500;
+    font-weight: 600;
 }
 .hero {
     flex-direction: column;
@@ -44,7 +44,7 @@ body {
 .hero h2 {
     font-size: 48px;
     font-weight: 900;
-    width: 400px;
+    width: 450px;
     text-transform: uppercase;
 }
 .hero p {
@@ -114,12 +114,12 @@ body {
     flex-direction: column;
     margin: 2%;
     border-radius: 15px;
-    box-shadow: 5px 15px 40px #929292b1;
+    box-shadow: 5px 15px 40px #000000a2;
 }
 .plans div{
     height: 560px;
 }
-.year, .diet{
+.year, .diet, footer{
     background: rgb(34, 232, 113);
     background: linear-gradient(131deg, rgba(34, 232, 113, 1) 0%, rgba(101, 131, 36, 1) 75%, rgba(165, 107, 38, 1) 100%);
     color: white;
@@ -157,7 +157,7 @@ body {
     color: #E05124;
 }
 .darker {
-    background-color: rgba(0, 0, 0, 0.089);
+    background-color: rgba(0, 0, 0, 0.064);
 }
 .year .darker {
     background-color: rgba(255, 255, 255, 0.089);
@@ -214,4 +214,34 @@ li{
     width: 60%;
     margin-top: -26.4%;
     margin-left: 50%;
+}
+.users{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    min-width: 1000px;
+    max-height: 650px;
+}
+.table{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.icon{
+    border-radius: 50%;
+    border: black solid 2px;
+    margin:1%;
+    width: 30px;
+    height: 30px;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20px;
+    padding: 2%;
+}
+.copyright{
+    max-height: 10px;
 }
