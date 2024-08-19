@@ -10,6 +10,13 @@ body {
     font-style: normal;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .head,
 .menu,
 .hero {
@@ -78,7 +85,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 5% 5% 0 9%;
     padding: 5%;
     width: 70%;
 }
@@ -256,6 +262,10 @@ li {
     margin-left: 50%;
 }
 
+.users h2 {
+    padding: 2%;
+}
+
 .users {
     display: flex;
     flex-direction: column;
@@ -333,6 +343,8 @@ li {
     align-items: center;
     height: 20px;
     padding: 2%;
+    right: 0;
+    bottom: 0;
 }
 
 .footer-links {
@@ -379,7 +391,7 @@ li {
     }
 
     .info  h3,
-    .infop {
+    .info p {
         font-size: 20px;
     }
 
@@ -393,13 +405,13 @@ li {
     }
 
     .plans {
-        flex-direction: column;
         align-items: center;
+        flex-wrap: nowrap;
     }
 
     .plans div{
-        width: 100%;
-        margin: 10px 0;
+        width: 90%;
+        margin: 2% 2%;
     }
 
     .num {
@@ -441,12 +453,17 @@ li {
 
 @media (max-width: 768px) {
     .head {
-        padding: 5%;
+        padding: 4%;
+        width: 92%;
     }
 
     .menu a {
         font-size: 16px;
         margin-left: 2%;
+    }
+
+    .avocado{
+        width: 30%;
     }
 
     .hero {
@@ -467,6 +484,10 @@ li {
         width: 100%;
     }
 
+    .info{
+        width:fit-content;
+        margin: 2%;
+    }
     .info h3,
     .info p {
         font-size: 16px;
@@ -483,27 +504,31 @@ li {
     .plans {
         flex-direction: column;
         align-items: center;
+        margin: 3%;
+        width: 80%;
     }
 
     .plans div{
         width: 100%;
     }
 
+    .plans h3{
+        font-size: 22px;
+    }
+
     .num {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
-    .users {
-        padding: 5px;
+    .diet{
+        width: 98%;
     }
 
-    .user {
-        flex-direction: column;
-    }
-
-    .avatar .icon {
-        width: 40px;
-        height: 40px;
+    [alt="pineapple"],
+    [alt="cheese"],
+    [alt="salad"],
+    [alt="tomato"] {
+        display: none;
     }
 
     .footer-links nav {
@@ -513,6 +538,7 @@ li {
     .foot {
         flex-direction: column;
         height: auto;
+        width: 100%;
     }
 
     .copyright {

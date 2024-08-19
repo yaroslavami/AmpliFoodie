@@ -34,17 +34,3 @@ users.forEach(user => {
 
     usersTable.appendChild(userDiv);
 });
-
-// Contact Button Functionality
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-
-// Sending data to Excel (Simulated via console log for demonstration)
-    console.log(`Name: ${name}, Email: ${email}`);
-
-    // Reset form after submission
-    e.target.reset();
-});
