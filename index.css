@@ -14,11 +14,10 @@ body {
 .menu,
 .hero {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .head {
-    align-items: center;
     text-transform: uppercase;
     padding: 1%;
 }
@@ -27,7 +26,6 @@ body {
     display: flex;
     font-family: 'Squada One', sans-serif;
     font-size: 18px;
-    margin-right: 50%;
     color: rgba(0, 0, 0, 0.723);
 }
 
@@ -80,13 +78,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 5% 0 0 14%;
-    padding: 2%;
+    margin: 5% 5% 0 9%;
+    padding: 5%;
     width: 70%;
 }
 
 .info {
-    height: 150px;
+    height: fit-content;
     border-radius: 15px;
     box-shadow: 5px 15px 40px #9292926b;
 }
@@ -117,15 +115,14 @@ body {
 .desc p {
     width: 600px;
     font-size: 15px;
-    padding: 1%;
+    padding: 3%;
 }
 
 .plans {
     display: flex;
-    flex-direction: row;
     align-items: start;
     padding: 2%;
-    flex-basis: 30%;
+    width: fit-content;
 }
 
 .plans div,
@@ -138,7 +135,7 @@ body {
 }
 
 .plans div {
-    height: 560px;
+    height: fit-content;
 }
 
 .year,
@@ -261,91 +258,73 @@ li {
 
 .users {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin: 10%;
-    min-width: 1000px;
-    max-height: 650px;
-    padding: 2%;
-    border-radius: 15px;
-    box-shadow: 5px 10px 30px #00000044;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+    margin: 0 4% 0;
 }
 
-.users h2 {
-    font-size: 20px;
+.user {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
 }
 
-.table {
+.avatar {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex: 1;
 }
 
-.table h3 {
-    font-size: 12px;
-    color: rgba(0, 0, 0, 0.5)
-}
-
-.user .ava,
-.user .beth,
-.user .davis,
-.user .james,
-.user .rachel {
-    display: flex;
-    flex-direction: row;
-}
-
-.ava,
-.beth,
-.davis,
-.james,
-.rachel {
-    padding: 5%;
-    width: 300px;
-}
-
-.user,
-.login-time {
-    margin: 3%;
-}
-
-.department .ava,
-.department .beth,
-.department .davis,
-.department .james,
-.department .rachel,
-.status .ava,
-.status .beth,
-.status .davis,
-.status .james,
-.status .rachel {
-    padding: 8%;
-}
-
-.icon {
+.avatar .icon {
     border-radius: 50%;
-    border: black solid 2px;
-    margin: 1%;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
 }
 
 .name {
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0;
 }
 
-.email,
-.ago {
-    font-size: 12px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.5);
+.email {
+    color: #555;
+    margin: 0;
 }
 
-.date,
+.last-login,
 .department,
 .status {
-    font-size: 14px;
+    flex: 1;
+    padding: 2%;
+    margin: 0;
+}
+
+.last-login .date,
+.last-login .ago,
+.department p,
+.status p {
+    margin: 0;
+    padding: 2%;
+    font-size: 0.9rem;
+}
+
+.last-login .date {
+    font-weight: bold;
+}
+
+.status p {
+    color: green;
+    font-weight: bold;
+}
+
+.copyright {
+    max-height: 10px;
+    padding: 2%;
 }
 
 .foot {
@@ -356,11 +335,187 @@ li {
     padding: 2%;
 }
 
-.copyright {
-    max-height: 10px;
+.footer-links {
+    margin-bottom: 1em;
 }
 
-.status {
-    color: #32870A;
-    font-weight: 600;
+.footer-links nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+    .head {
+        padding: 2%;
+    }
+
+    .menu a {
+        font-size: 14px;
+        margin-left: 5%;
+    }
+
+    .hero {
+        padding: 8%;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+        width: 100%;
+    }
+
+    .hero p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .info,
+    .subscription {
+        margin: 5% 0;
+        width: 85%;
+    }
+
+    .info  h3,
+    .infop {
+        font-size: 20px;
+    }
+
+    .desc h4 {
+        font-size: 20px;
+    }
+
+    .desc p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plans div{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .num {
+        font-size: 32px !important;
+    }
+
+    .users {
+        padding: 10px;
+    }
+
+    .user {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .avatar {
+        margin-bottom: 10px;
+    }
+
+    .avatar .icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .footer-links nav {
+        flex-direction: column;
+    }
+
+    .foot {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .head {
+        padding: 5%;
+    }
+
+    .menu a {
+        font-size: 16px;
+        margin-left: 2%;
+    }
+
+    .hero {
+        padding: 5%;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .info,
+    .subscription {
+        margin: 5% 0;
+        width: 100%;
+    }
+
+    .info h3,
+    .info p {
+        font-size: 16px;
+    }
+
+    .desc h4 {
+        font-size: 18px;
+    }
+
+    .desc p {
+        font-size: 12px;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plans div{
+        width: 100%;
+    }
+
+    .num {
+        font-size: 28px !important;
+    }
+
+    .users {
+        padding: 5px;
+    }
+
+    .user {
+        flex-direction: column;
+    }
+
+    .avatar .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-links nav {
+        flex-direction: column;
+    }
+
+    .foot {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .copyright {
+        font-size: 8px;
+    }
 }
